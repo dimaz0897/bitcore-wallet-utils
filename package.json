@@ -2,12 +2,14 @@
   "name": "bitcore-wallet-utils",
   "description": "Common library for Bitcore Wallet Service and Client",
   "author": "BitPay Inc",
-  "version": "0.0.1",
+  "version": "0.0.5",
+  "main": "index.js",
   "keywords": [
     "bitcoin",
     "copay",
     "multisig",
-    "wallet"
+    "wallet",
+    "utils"
   ],
   "repository": {
     "url": "git@github.com:bitpay/bitcore-wallet-utils.git",
@@ -17,7 +19,7 @@
     "url": "https://github.com/bitpay/bitcore-wallet-utils/issues"
   },
   "dependencies": {
-    "bitcore": "^0.11.2",
+    "bitcore": "^0.11.4",
     "coveralls": "^2.11.2",
     "lodash": "^3.3.1",
     "preconditions": "^1.0.8",
@@ -36,5 +38,12 @@
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec test",
     "test": "./node_modules/.bin/mocha",
     "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
-  }
+  },
+  "contributors": [{
+    "name": "Ivan Socolsky",
+    "email": "ivan@gmail.com"
+  }, {
+    "name": "Matias Alejo Garcia",
+    "email": "ematiu@gmail.com"
+  }]
 }
